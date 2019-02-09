@@ -2,7 +2,7 @@
 from math import sqrt, sin, cos, exp
 class functions:
     def __init__(self):
-       print("Constructor")
+       self.sumOfValues = 0
     def ackley(self,values):
     
         a = 20

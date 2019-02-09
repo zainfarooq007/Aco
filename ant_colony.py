@@ -1,5 +1,5 @@
 from threading import Thread
-
+import functions
 class ant_colony:
 	class ant(Thread):
 		def __init__(self, init_location, possible_locations, pheromone_map, distance_callback, alpha, beta, first_pass=False):
@@ -305,7 +305,6 @@ class ant_colony:
 		"""
 		if not self.distance_matrix[start][end]:
 			distance = self.distance_callback(self.nodes[start], self.nodes[end])
-			
 			if (type(distance) is not int) and (type(distance) is not float):
 				raise TypeError("distance_callback should return either int or float, saw: "+ str(type(distance)))
 			
