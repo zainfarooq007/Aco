@@ -1,5 +1,5 @@
-# ant-colony-optimization
-Implementation of the Ant Colony Optimization algorithm (python)
+# Partical swarm optimization
+Implementation of the Partical swarm optimization algorithm (python)
 
 Assigned by Sir Fahad Maqbool
 

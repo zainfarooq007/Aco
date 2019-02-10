@@ -6,11 +6,6 @@ import functions
 #--- COST FUNCTION ------------------------------------------------------------+
 
 # function we are attempting to optimize (minimize)
-def func1(x):
-    func = functions.functions()
-    total = func.ackley(x)
-    return total
-
 #--- MAIN ---------------------------------------------------------------------+
 
 class Particle:
@@ -103,6 +98,3 @@ if __name__ == "__PSO__":
 
 #--- RUN ----------------------------------------------------------------------+
 
-initial=[2,3]               # initial starting location [x1,x2...]
-bounds=[(6,3),(3,6)]  # input bounds [(x1_min,x1_max),(x2_min,x2_max)...]
-PSO(func1, initial, bounds, num_particles=15, maxiter=30, verbose=True)
